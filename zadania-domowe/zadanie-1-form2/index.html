@@ -21,17 +21,22 @@
             <input type="email" id="email" name="email" placeholder="Enter your email address" required multiple>
 
         </fieldset>
-
         <fieldset id="books">
             <legend>Books</legend>
-            <input type="text" id="value" name="book">
+            <input type="text" id="option" name="book" list="value">
+            <datalist id="value">
+                <option value="Book 1"></option>
+                <option value="Book 2"></option>
+                <option value="Book 3"></option>
+                <option value="Book 4"></option>
+                <option value="Book 5"></option>
+            </datalist>
             <label for="number">Quantity (Maximum 5): </label>
             <input type="number" id="number" name="quantity" min="1" max="5">
         </fieldset>
 
         <input type="submit" value="Submit">
     </form>
-
 
 </body>
 
