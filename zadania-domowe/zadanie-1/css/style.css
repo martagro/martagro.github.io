@@ -1,4 +1,56 @@
-body {
+form {
     background-color: #213b50;
     color: white;
+    padding: 20px;
+    width: 600px;
 }
+
+input,
+select,
+textarea {
+    background-color: #2b4a64;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 300px;
+    height: 25px;
+    border: #2b4a64 2px solid;
+    color: white;
+}
+
+input:focus,
+select:hover,
+textarea:hover {
+    background-color: #4e708c;
+    border: white 2px solid;
+    outline: none;
+    /* jeśli włączymy outline: none to nie ma wewnętrznego obramowania po kliknięciu w inputa, pojawia się tylko border ustawiony przez nas*/
+    color: white;
+}
+
+
+textarea {
+    height: 80px;
+}
+
+input[type="submit"] {
+    background-color: lime;
+    padding: 15px 20px;
+    border: lime 1px solid;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: forestgreen;
+    border: forestgreen 1px solid;
+}
+
+/*Jeśli checkbox i tekst nie były by ustawione w html w odpowiedniej kolejności, to żeby tekst przykleić do chceckboxa można zrobić to przez float:left i wtedy tekst wyświetla się obok okienka, a nie pod nim*/
